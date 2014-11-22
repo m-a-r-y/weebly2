@@ -7,6 +7,7 @@
 
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var Page = require('../api/page/page.model');
 
 Thing.find({}).remove(function() {
   Thing.create({
@@ -47,3 +48,17 @@ User.find({}).remove(function() {
     }
   );
 });
+
+  Page.create({
+    title: 'test1' ,
+    body:'<h1>This is the first page<h1> ',
+    user_id: "5470ed4df18dbe2f3200edaa"
+  }, {
+    title: 'test2' ,
+    body:'<h1>This is the second page<h1> ',
+    user_id: "5470ed4df18dbe2f3200edaa"
+  }, function() {
+      console.log('finished populating pages');
+    }
+  );
+
