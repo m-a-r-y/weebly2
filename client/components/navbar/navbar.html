@@ -1,0 +1,88 @@
+<!-- <div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">weebly2</a>
+    </div>
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+            <a ng-href="{{item.link}}">{{item.title}}</a>
+        </li>
+        <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Admin</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a href="/login">Login</a></li>
+        <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{ getCurrentUser().name }}</p> </li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/settings')}"><a href="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+ -->
+<div id="navbar">
+  <div id="template">
+        <div id="navTitle">
+          TEMPLATES
+        </div>
+        <div id="templatesItem">
+        <div class="item">
+
+
+             <ul class="nav navbar-nav navbar-right">
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a href="/login">Login</a></li>
+        <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{ getCurrentUser().name }}</p> </li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/settings')}"><a href="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
+      </ul>
+
+        </div>
+
+        <div class="item">
+
+ <ul >
+        <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+            <a ng-href="{{item.link}}">{{item.title}}</a>
+        </li>
+        <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Admin</a></li>
+      </ul>
+
+        </div>
+          <div class="item">
+            <button type="button" class="btn btn-sm">PAGE<span class="glyphicon glyphicon-pencil pull-right"></span> <span class="glyphicon glyphicon-remove pull-right"></span></button>
+          </div>
+          <form class="form-inline" role="form">
+            <div class="form-group has-feedback">
+              <input type="text" class="form-control input-sm" placeholder="ADD NEW PAGE" ng-model="page">
+              <span class="glyphicon glyphicon-plus form-control-feedback" ng-click="addPage()"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="element">
+        <div id="navTitle">
+          ELEMENT
+        </div>
+        <div id="elementItem">
+          <div class="draggable">
+            <div id="border1">
+              <div id="text"><div id="textImg"></div><p>TEXT</p></div>
+            </div>
+            <div id="border2">
+              <div id="image"><div id="imgImg"></div><p>IMAGE</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
