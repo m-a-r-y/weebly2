@@ -57,7 +57,7 @@ body {
   height: 30px;
   width: 35px;
   margin-left: 20px;
-  background: url(/assets/img/Weebly-Logo.png) 0 -3px;
+  background: url(/assets/images/Weebly-Logo.png) 0 -3px;
 }
 
 #navbar {
@@ -141,7 +141,7 @@ float: left;
 #textImg {
 width: 47px;
 height: 50px;
-background: url(/assets/img/sprite.png) 147px -5px;
+background: url(/assets/images/sprite.png) 147px -5px;
 cursor: move;
 }
 
@@ -158,7 +158,7 @@ float: right;
 #imgImg {
 width: 47px;
 height: 50px;
-background: url(/assets/img/sprite.png) -99px -5px;
+background: url(/assets/images/sprite.png) -99px -5px;
 cursor: move;
 }
 
