@@ -74,12 +74,15 @@ margin: 20px 10px;
   margin: 10px 10px;
 }
 
-.btn-sm, .btn-group-sm>.btn {
-padding: 5px 54px;
-font-size: 11px;
-line-height: 1.5;
-border-radius: 3px;
+.page {
 background-color: #5d96c9;
+display: inline-block;
+vertical-align: middle;
+border-radius: 3px;
+border-width: 2px;
+width: 170px;
+padding: 5px;
+padding-left: 12px;
 }
 
 .glyphicon {
@@ -125,17 +128,26 @@ border-bottom-style: inset;
 }
 
 
-#element {
+/*#element {
   height: 300px;
 }
-
+*/
 #elementItem {
-  height: 250px;
+  height: 190px;
 }
 
-#border1 {
-margin: 25px;
-float: left;
+#titleImg {
+width: 47px;
+height: 50px;
+background: url(/assets/images/sprite.png) 195px -5px;
+cursor: move;
+}
+
+#title{
+  float: left;
+  text-align: center;
+  margin: 10px 25px;
+
 }
 
 #textImg {
@@ -146,13 +158,10 @@ cursor: move;
 }
 
 #text{
-  float: left;
+  float: right;
   text-align: center;
-}
+  margin: 10px 25px;
 
-#border2 {
-margin: 25px;
-float: right;
 }
 
 #imgImg {
@@ -162,25 +171,43 @@ background: url(/assets/images/sprite.png) -99px -5px;
 cursor: move;
 }
 
-#image {
+#img{
+  float: left;
+  text-align: center;
+  margin: 10px 25px;
+
+}
+
+#navImg {
+width: 47px;
+height: 50px;
+background: url(/assets/images/sprite.png) 53px -5px;
+cursor: move;
+}
+
+#nav{
   float: right;
   text-align: center;
-}
-
-#content {
-    margin-left: 210px;
-    height: 700px;
-    background: #F7F6EE;
-    padding: 30px 60px;
-}
-
-/*
-#box {
-
+  margin: 10px 25px;
 
 }
 
-#square {
-  border: 1px solid pink;
+.settingText {
+  margin: 10px 25px;
 }
-*/
+
+#toggleImg {
+  background: url(/assets/images/Toggle-Switch.png) 55px -5px;
+  height: 20px;
+  width: 50px;
+  margin-left: 25px;
+}
+
+table {
+  border-bottom: 1px solid black;
+  width: 210px;
+}
+
+.eTable {
+  border-right: 1px solid black;
+}

@@ -58,7 +58,7 @@
 
         </div>
           <div class="item">
-            <button type="button" class="btn btn-sm">PAGE<span class="glyphicon glyphicon-pencil pull-right"></span> <span class="glyphicon glyphicon-remove pull-right"></span></button>
+            <div class="page">PAGE<span class="edit"></span><span class="delete"></span></div>
           </div>
           <form class="form-inline" role="form">
             <div class="form-group has-feedback">
@@ -75,13 +75,41 @@
         </div>
         <div id="elementItem">
           <div class="draggable">
-            <div id="border1">
+          <table>
+          <tr>
+            <td class="eTable">
+              <div id="title"><div id="titleImg"></div><p>TITLE</p></div>
+            </td>
+            <td  class="eTable">
               <div id="text"><div id="textImg"></div><p>TEXT</p></div>
-            </div>
-            <div id="border2">
-              <div id="image"><div id="imgImg"></div><p>IMAGE</p></div>
-            </div>
+            </td>
+           </tr>
+          </table>
+          <table>
+          <tr>
+            <td  class="eTable">
+              <div id="img"><div id="imgImg"></div><p>IMAGE</p></div>
+            </td>
+            <td  class="eTable">
+              <div id="nav"><div id="navImg"></div><p>NAV</p></div>
+            </td>
           </div>
+          </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="settings">
+        <div id="navTitle">
+          SETTINGS
+        </div>
+        <div id="settingsItem">
+        <table>
+        <tr>
+          <td><p class="settingText">SITE GRID<p></td>
+          <td><div id="toggleImg"></div></td>
+        </tr>
+        </table>
         </div>
       </div>
 
