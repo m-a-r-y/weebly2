@@ -34,8 +34,6 @@
           TEMPLATES
         </div>
         <div id="templatesItem">
-        <div class="item">
-
 
 <!--       <ul class="nav navbar-nav navbar-right">
         <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
@@ -45,9 +43,6 @@
         <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
       </ul>
  -->
-        </div>
-
-        <div class="item">
 
 <!--  <ul >
         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
@@ -56,9 +51,10 @@
         <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Admin</a></li>
       </ul> -->
 
-        </div>
           <div class="item">
-            <div class="page">PAGE<span class="edit"></span><span class="delete"></span></div>
+            <ul class="allPage">
+              <li class="page">PAGE<span class="delete glyphicon glyphicon-remove pull-right" ng-click="removePage()"></span><span class="edit glyphicon glyphicon-pencil pull-right" ng-click="editPage()"></span></li>
+            </ul>
           </div>
           <form class="form-inline" role="form">
             <div class="form-group has-feedback">

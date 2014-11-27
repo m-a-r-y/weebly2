@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('weebly2App')
-  .controller('NavbarCtrl', function ($scope, $location, Auth, $http) {
+  .controller('NavbarCtrl', function ($scope, $location, Pages, Auth, $http) {
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
@@ -33,4 +33,15 @@ angular.module('weebly2App')
     };
 
     init();
+
+    $scope.addPage = function(page) {
+
+
+    };
+
+    $scope.removePage = function() {
+      alert("gone!");
+      $(".page").remove();
+    }
+
   });

@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: pages', function () {
+describe('Service: Pages', function () {
 
   // load the service's module
   beforeEach(module('weebly2App'));

@@ -76,13 +76,22 @@ margin: 20px 10px;
 
 .page {
 background-color: #5d96c9;
-display: inline-block;
-vertical-align: middle;
 border-radius: 3px;
 border-width: 2px;
 width: 170px;
 padding: 5px;
 padding-left: 12px;
+margin: 5px -40px;
+}
+
+.edit {
+/*background: url(/assets/images/Add-Delete-Edit-Icons.png) 193px -5px;
+*/  height: 20px;
+}
+
+.delete {
+/*background: url(/assets/images/Add-Delete-Edit-Icons.png) 193px -5px;
+*/  height: 20px;
 }
 
 .glyphicon {
@@ -102,7 +111,7 @@ display: inline-block;
 vertical-align: middle;
 border-radius: 3px;
 border-color: #50657d;
-border-width: 2px;
+border-width: 3px;
 background-color: #2d3e52;
 width: 170px;
 }
@@ -133,20 +142,20 @@ border-bottom-style: inset;
 }
 */
 #elementItem {
-  height: 190px;
+  height: 175px;
 }
 
 #titleImg {
 width: 47px;
 height: 50px;
-background: url(/assets/images/sprite.png) 195px -5px;
+background: url(/assets/images/sprite.png) 193px -5px;
 cursor: move;
 }
 
 #title{
   float: left;
   text-align: center;
-  margin: 10px 25px;
+  margin: 10px 25px 0px;
 
 }
 
@@ -160,7 +169,7 @@ cursor: move;
 #text{
   float: right;
   text-align: center;
-  margin: 10px 25px;
+  margin: 10px 25px 0px;
 
 }
 
@@ -174,7 +183,7 @@ cursor: move;
 #img{
   float: left;
   text-align: center;
-  margin: 10px 25px;
+  margin: 10px 25px 0px;
 
 }
 
@@ -188,7 +197,7 @@ cursor: move;
 #nav{
   float: right;
   text-align: center;
-  margin: 10px 25px;
+  margin: 10px 25px 0px;
 
 }
 
@@ -200,7 +209,6 @@ cursor: move;
   background: url(/assets/images/Toggle-Switch.png) 55px -5px;
   height: 20px;
   width: 50px;
-  margin-left: 25px;
 }
 
 table {
@@ -211,3 +219,7 @@ table {
 .eTable {
   border-right: 1px solid black;
 }
+
+ ul {
+ list-style-type: none;
+ }
