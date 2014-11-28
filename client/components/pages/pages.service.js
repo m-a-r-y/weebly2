@@ -8,11 +8,23 @@ angular.module('weebly2App')
 
     //};
 
-    var currentuser= Auth.getCurrentUser();
-        console.log(currentuser);
-debugger;
-    return $resource('/api/users/'+currentuser._id+'/pages/:id', {
-      id: '@_id'
-    });
+    var o = {}
+     o.list= [
+      {
+        title: "my resume",
+        body: "whatever"
+      },
+            {
+        title: "my contacts",
+        body: "whatever23"
+      }
+    ]
+
+    // var currentuser= Auth.getCurrentUser();
+    //     console.log(currentuser);
+    // return $resource('/api/users/'+currentuser._id+'/pages/:id', {
+    //   id: '@_id'
+    // });
+  return o;
 
   });

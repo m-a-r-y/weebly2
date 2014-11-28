@@ -53,13 +53,18 @@
 
           <div class="item">
             <ul class="allPage">
-              <li class="page">PAGE<span class="delete glyphicon glyphicon-remove pull-right" ng-click="removePage()"></span><span class="edit glyphicon glyphicon-pencil pull-right" ng-click="editPage()"></span></li>
+
+            <li class="page" ng-repeat="page in pages track by $index">
+            <a ng-click="showPage($index)">
+              {{page.title}}<span class="delete glyphicon glyphicon-remove pull-right" ng-click="removePage($index)"></span><span class="edit glyphicon glyphicon-pencil pull-right"></span></a></li>
+
+            </li>
             </ul>
           </div>
           <form class="form-inline" role="form">
             <div class="form-group has-feedback">
-              <input type="text" class="form-control input-sm" placeholder="ADD NEW PAGE" ng-model="page">
-              <span class="glyphicon glyphicon-plus form-control-feedback" ng-click="addPage()"></span>
+              <input type="text" class="form-control input-sm" placeholder="ADD NEW PAGE" ng-model="page.title">
+              <span class="glyphicon glyphicon-plus form-control-feedback" ng-click="addPage(page)"></span>
             </div>
           </form>
         </div>
@@ -108,5 +113,4 @@
         </table>
         </div>
       </div>
-
 </div>

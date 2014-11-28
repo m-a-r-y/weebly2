@@ -28,3 +28,13 @@
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
 }
+
+.page {
+background-color: #5d96c9;
+border-radius: 3px;
+border-width: 2px;
+width: 170px;
+padding: 5px;
+padding-left: 12px;
+margin: 5px -40px;
+}

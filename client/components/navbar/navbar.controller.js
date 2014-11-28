@@ -1,21 +1,24 @@
 'use strict';
 
 angular.module('weebly2App')
-  .controller('NavbarCtrl', function ($scope, $location, Pages, Auth, $http) {
+  .controller('NavbarCtrl', function ($scope,$state, $location, Pages, Auth, $http) {
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
     }];
 
-    function init(){
-      console.log("inside init")
-      $http.get("/api/pages").then(function(res){
+    $scope.pages= Pages.list;
 
-        console.log(res);
-      })
+
+    function init(){
 
     };
 
+    $scope.showPage = function(id){
+
+      $state.go("main.page", {id: id});
+
+    }
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin = Auth.isAdmin;
@@ -35,13 +38,13 @@ angular.module('weebly2App')
     init();
 
     $scope.addPage = function(page) {
-
-
+      var e = $scope.page;
+      $scope.pages.push(e);
+      $scope.page="";
     };
 
-    $scope.removePage = function() {
-      alert("gone!");
-      $(".page").remove();
+    $scope.removePage = function(id) {
+      $scope.pages.splice(id,1);
     }
 
   });
