@@ -14,7 +14,9 @@ var passPrimaryParams = function(req, res, next) {
 
 
 
-router.use('/:id/', passPrimaryParams, require('../page'));
+router.use('/:id/pages', passPrimaryParams)
+router.use('/:id/pages', auth.isAuthenticated())
+router.use('/:id/pages', require('../page'));
 
 
 router.get('/', controller.index);

@@ -9,17 +9,22 @@
         <ul class="allPage">
 
         <li class="page" ng-repeat="page in pages track by $index">
-        <a ng-click="showPage($index)" class="pageLink">
-          {{page.title | uppercase}}<span class="delete glyphicon glyphicon-remove pull-right" ng-click="removePage($index)"></span><span class="edit glyphicon glyphicon-pencil pull-right" ng-click="editPage($index)"></span></a>
+        <div>
+          <a ng-click="showPage(page._id)" class="pageLink" editable-text="page.title">
+          {{page.title | uppercase}}
+          </a>
+          <a type="button" class="delete glyphicon glyphicon-remove pull-right" ng-click="deleteOne(page._id)"></a>
+          <a type="button" class="edit glyphicon glyphicon-pencil pull-right" ng-click="editOne(page)"></a>
+        </div>
         </li>
         </ul>
       </div>
 
       <form class="form-inline" role="form">
-            <div class="form-group has-feedback">
-              <input type="text" class="form-control input-sm" placeholder="ADD NEW PAGE" ng-model="page">
-              <span class="glyphicon glyphicon-plus form-control-feedback" ng-click="addPage()"></span>
-            </div>
+        <div class="form-group has-feedback">
+          <input type="text" class="form-control input-sm" placeholder="ADD NEW PAGE" ng-model="page.title" ng-required="true">
+          <span class="glyphicon glyphicon-plus form-control-feedback" ng-click="save(page)"></span>
+        </div>
       </form>
     </div>
   </div>
