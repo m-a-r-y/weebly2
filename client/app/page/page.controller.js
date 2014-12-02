@@ -2,6 +2,11 @@
 
 angular.module('weebly2App')
   .controller('PageCtrl', function ($scope, $stateParams, Pages) {
+    $scope.page = {} ;
 
-    $scope.page= Pages.list[$stateParams.id];
+    Pages.getOne($stateParams.id).success(function(response){
+      $scope.page = response;
+
+    })
+
   });

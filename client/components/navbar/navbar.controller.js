@@ -7,8 +7,12 @@ angular.module('weebly2App')
       'link': '/'
     }];
 
-    $scope.pages= Pages.list;
+    $scope.pages = [] ;
 
+    Pages.getAll().success(function(response){
+      $scope.pages = response ;
+      console.log(response);
+    })
 
     function init(){
 
@@ -29,6 +33,9 @@ angular.module('weebly2App')
       $location.path('/login');
     };
 
+    $scope.editOne = Pages.editOne;
+    $scope.save = Pages.save;
+    $scope.deleteOne = Pages.deleteOne ;
 
 
     $scope.isActive = function(route) {
