@@ -7,6 +7,16 @@ var auth = require('../../auth/auth.service');
 
 var router = express.Router();
 
+var passPrimaryParams = function(req, res, next) {
+    req.primaryParams = req.params;
+    next();
+}
+
+
+
+router.use('/:id/', passPrimaryParams, require('../page'));
+
+
 router.get('/', controller.index);
 router.delete('/:id', auth.hasRole('admin'), controller.destroy);
 router.get('/me', auth.isAuthenticated(), controller.me);

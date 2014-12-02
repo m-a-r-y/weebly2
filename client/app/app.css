@@ -57,12 +57,12 @@ body {
   height: 30px;
   width: 35px;
   margin-left: 20px;
-  background: url(/assets/img/Weebly-Logo.png) 0 -3px;
+  background: url(/assets/images/Weebly-Logo.png) 0 -3px;
 }
 
 #navbar {
     width: 210px;
-    height: 700px;
+    height: 800px;
     background-color: #2d3e52;
     float: left;}
 
@@ -74,12 +74,24 @@ margin: 20px 10px;
   margin: 10px 10px;
 }
 
-.btn-sm, .btn-group-sm>.btn {
-padding: 5px 54px;
-font-size: 11px;
-line-height: 1.5;
-border-radius: 3px;
+.page {
 background-color: #5d96c9;
+border-radius: 3px;
+border-width: 2px;
+width: 170px;
+padding: 5px;
+padding-left: 12px;
+margin: 5px -40px;
+}
+
+.edit {
+/*background: url(/assets/images/Add-Delete-Edit-Icons.png) 193px -5px;
+*/  height: 20px;
+}
+
+.delete {
+/*background: url(/assets/images/Add-Delete-Edit-Icons.png) 193px -5px;
+*/  height: 20px;
 }
 
 .glyphicon {
@@ -99,7 +111,7 @@ display: inline-block;
 vertical-align: middle;
 border-radius: 3px;
 border-color: #50657d;
-border-width: 2px;
+border-width: 3px;
 background-color: #2d3e52;
 width: 170px;
 }
@@ -125,62 +137,102 @@ border-bottom-style: inset;
 }
 
 
-#element {
+/*#element {
   height: 300px;
 }
-
+*/
 #elementItem {
-  height: 250px;
+  height: 175px;
 }
 
-#border1 {
-margin: 25px;
-float: left;
+#titleImg {
+width: 47px;
+height: 50px;
+background: url(/assets/images/sprite.png) 193px -5px;
+cursor: move;
+}
+
+#title{
+  float: left;
+  text-align: center;
+  margin: 10px 25px 0px;
+
 }
 
 #textImg {
 width: 47px;
 height: 50px;
-background: url(/assets/img/sprite.png) 147px -5px;
+background: url(/assets/images/sprite.png) 147px -5px;
 cursor: move;
 }
 
 #text{
-  float: left;
+  float: right;
   text-align: center;
-}
+  margin: 10px 25px 0px;
 
-#border2 {
-margin: 25px;
-float: right;
 }
 
 #imgImg {
 width: 47px;
 height: 50px;
-background: url(/assets/img/sprite.png) -99px -5px;
+background: url(/assets/images/sprite.png) -99px -5px;
 cursor: move;
 }
 
-#image {
+#img{
+  float: left;
+  text-align: center;
+  margin: 10px 25px 0px;
+
+}
+
+#navImg {
+width: 47px;
+height: 50px;
+background: url(/assets/images/sprite.png) 53px -5px;
+cursor: move;
+}
+
+#nav{
   float: right;
   text-align: center;
-}
-
-#content {
-    margin-left: 210px;
-    height: 700px;
-    background: #F7F6EE;
-    padding: 30px 60px;
-}
-
-/*
-#box {
-
+  margin: 10px 25px 0px;
 
 }
 
-#square {
-  border: 1px solid pink;
+.settingText {
+  margin: 10px 25px;
 }
-*/
+
+#toggleImg {
+  background: url(/assets/images/Toggle-Switch.png) 55px -5px;
+  height: 20px;
+  width: 50px;
+}
+
+table {
+  border-bottom: 1px solid black;
+  width: 210px;
+}
+
+.eTable {
+  border-right: 1px solid black;
+}
+
+ ul {
+ list-style-type: none;
+ }
+
+ .pageLink {
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+}
+
+a:hover {
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+  text-decoration: none;
+}
