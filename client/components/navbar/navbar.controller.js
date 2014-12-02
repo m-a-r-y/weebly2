@@ -43,11 +43,6 @@ angular.module('weebly2App')
       $scope.page="";
     };
 
-    $scope.editPage = function(page) {
-      var e = $scope.page;
-      $scope.pages.push(e);
-      $scope.page="";
-    };
 
     $scope.removePage = function(id) {
       $scope.pages.splice(id,1);
