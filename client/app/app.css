@@ -223,3 +223,16 @@ table {
  ul {
  list-style-type: none;
  }
+
+ .pageLink {
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+}
+
+a:hover {
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+  text-decoration: none;
+}

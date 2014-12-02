@@ -11,12 +11,8 @@ angular.module('weebly2App')
     var o = {}
      o.list= [
       {
-        title: "my resume",
+        title: "PAGE",
         body: "whatever"
-      },
-            {
-        title: "my contacts",
-        body: "whatever23"
       }
     ]
 
