@@ -9,7 +9,7 @@
         <ul class="allPage">
 
         <li class="page" ng-repeat="page in pages track by $index">
-        <a ng-click="showPage($index)" class="pageLink">
+        <a ng-click="showPage($index)" class="pageLink" editable-text="page.title">
           {{page.title | uppercase}}<span class="delete glyphicon glyphicon-remove pull-right" ng-click="removePage($index)"></span><span class="edit glyphicon glyphicon-pencil pull-right" ng-click="editPage($index)"></span></a>
         </li>
         </ul>
