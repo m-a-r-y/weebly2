@@ -230,7 +230,13 @@ table {
   font-weight: 400;
 }
 
-a:hover {
+a.editable-click {
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+  text-decoration: none;
+}
+a.editable-click:hover {
   color: white;
   font-size: medium;
   font-weight: 400;
